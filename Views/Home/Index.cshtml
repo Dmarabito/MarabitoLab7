@@ -1,0 +1,26 @@
+﻿@using MarabitoLab7.Models
+@model TodoListItem?
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add todo list item</title>
+</head>
+<body>
+
+    <form method="post">
+        <label>Manual binding? </label>
+        <input type="checkbox" value="true" name="bind">
+        </br>
+        <label> Completed? </label>
+        <input type="checkbox" name="completionStatus" value="true">
+        <label>Priority</label>
+        <input type="number" name="priority" /></br>
+        <label>Description</label></br>
+        <textarea name="itemDescription"></textarea></br>
+        <input type="submit">
+    </form>
+    <p>@(Model?.itemDescription ?? "")</p>
+</body>
+</html>

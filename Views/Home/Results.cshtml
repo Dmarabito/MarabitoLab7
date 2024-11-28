@@ -1,0 +1,17 @@
+﻿@using MarabitoLab7.Models
+@model TodoListItem?
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+</head>
+<body>
+
+<h1>Results</h1>
+     <p>Completion status: @(Model?.completionStatus.ToString() ?? "")</p>
+    <p>Priority: @(Model?.priority.ToString() ?? "")</p>
+    <p>Description: @(Model?.itemDescription ?? "")</p>
+</body>
+</html>
